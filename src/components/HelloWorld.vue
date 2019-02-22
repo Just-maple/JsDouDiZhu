@@ -241,33 +241,17 @@
           case s.indexOf('xxxyyy') >= 0: {
             return '飞机'
           }
-          case s === 'xx': {
-            return '对' + n
-          }
-          case s === 'rocket': {
-            return '火箭'
-          }
-          case s === 'xxx': {
-            return '三个' + n
-          }
-          case s === 'xxxa': {
-            return '三带一'
-          }
-          case s === 'xxxaa': {
-            return '三带二'
-          }
-          case s === 'xxxx': {
-            return '炸弹'
-          }
-          case s === 'xxxxab': {
-            return '四带二'
-          }
-          case s === 'xxxxaabb': {
-            return '四带两对'
-          }
-          default: {
-            return n
-          }
+          default:
+            return {
+              'xx': '对' + n,
+              'rocket': '火箭',
+              'xxx': '三个' + n,
+              'xxxa': '三带一',
+              'xxxaa': '三带二',
+              'xxxx': '炸弹',
+              'xxxxab': '四带二',
+              'xxxxaabb': '四带两对',
+            }[s] || n
         }
       }, isOtherPairs(s, i0, i1) {
         for (let i = 0; i < s.length - 1; i++) {
