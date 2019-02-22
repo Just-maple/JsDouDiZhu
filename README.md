@@ -1,6 +1,6 @@
 # doudizhu-playground
 
-> A Vue.js project
+> 基于Js实现的斗地主游戏主要逻辑
 
 ## Build Setup
 
