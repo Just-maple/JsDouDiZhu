@@ -319,6 +319,10 @@
           }
           case 8: {
             type = checkComboAndPairs(s, 4, this.isSame)
+            if (!type) {
+              type = checkCombo(s, 6, this.isTriList)
+            }
+            break
           }
           case 9: {
             if (this.isTriList(s)) {
